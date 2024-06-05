@@ -13,7 +13,7 @@ export default mergeConfig(
     test: {
       globals: true,
       environment: 'happy-dom', // happy-dom provides a better performance but doesn't have a default url.
-      setupFiles: [fileURLToPath(new URL('./src/main/webapp/app/test-setup.ts', import.meta.url))],
+      setupFiles: [fileURLToPath(new URL('./src/app/test-setup.ts', import.meta.url))],
       reporters: ['default', 'vitest-sonar-reporter'],
       outputFile: {
         'vitest-sonar-reporter': fileURLToPath(new URL('./target/test-results/TESTS-results-vitest.xml', import.meta.url)),

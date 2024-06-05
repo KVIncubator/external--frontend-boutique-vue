@@ -25,14 +25,14 @@ let config = defineConfig({
             `${normalizePath(swaggerUiPath)}/*.{js,css,html,png}`,
             `!${normalizePath(swaggerUiPath)}/**/index.html`,
             normalizePath(getFileFromRepo('axios/dist/axios.min.js')),
-            normalizePath(fileURLToPath(new URL('./src/main/webapp/swagger-ui/index.html', import.meta.url))),
+            normalizePath(fileURLToPath(new URL('./src/swagger-ui/index.html', import.meta.url))),
           ],
           dest: 'swagger-ui',
         },
       ],
     }),
   ],
-  root: fileURLToPath(new URL('./src/main/webapp/', import.meta.url)),
+  root: fileURLToPath(new URL('./src/', import.meta.url)),
   publicDir: fileURLToPath(new URL('./target/classes/static/public', import.meta.url)),
   cacheDir: fileURLToPath(new URL('./target/.vite-cache', import.meta.url)),
   build: {
@@ -40,14 +40,14 @@ let config = defineConfig({
     outDir: fileURLToPath(new URL('./target/classes/static/', import.meta.url)),
     rollupOptions: {
       input: {
-        app: fileURLToPath(new URL('./src/main/webapp/index.html', import.meta.url)),
+        app: fileURLToPath(new URL('./src/index.html', import.meta.url)),
       },
     },
   },
   resolve: {
     alias: {
       vue: '@vue/compat/dist/vue.esm-bundler.js',
-      '@': fileURLToPath(new URL('./src/main/webapp/app/', import.meta.url)),
+      '@': fileURLToPath(new URL('./src/app/', import.meta.url)),
     },
   },
   define: {

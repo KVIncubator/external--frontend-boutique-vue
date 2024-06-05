@@ -5,6 +5,6 @@ export default defineConfig({
   ...defaultConfig,
   e2e: {
     ...defaultConfig.e2e,
-    specPattern: 'src/test/javascript/cypress/e2e/**/*.audits.ts',
+    specPattern: 'cypress/e2e/**/*.audits.ts',
   },
 });
