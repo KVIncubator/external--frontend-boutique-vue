@@ -36,7 +36,7 @@ The `npm run` command will list all of the scripts available to run for this pro
 
 ### PWA Support
 
-JHipster ships with PWA (Progressive Web App) support, and it's turned off by default. One of the main components of a PWA is a service worker.
+App ships with PWA (Progressive Web App) support, and it's turned off by default. One of the main components of a PWA is a service worker.
 
 The service worker initialization code is commented out by default. To enable it, uncomment the following code in `src/index.html`:
 
@@ -69,12 +69,6 @@ npm install --save-dev --save-exact @types/leaflet
 Then you would import the JS and CSS files specified in library's installation instructions so that [Webpack][] knows about them:
 Note: There are still a few other things remaining to do for Leaflet that we won't detail here.
 
-For further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].
-
-## Building for production
-
-## Testing
-
 ### Client tests
 
 Unit tests are run by [Jest][]. They're located in [src/test/javascript/](src/test/javascript/) and can be run with:
@@ -92,14 +86,6 @@ You can execute automated [lighthouse audits][https://developers.google.com/web/
 You should only run the audits when your application is packaged with the production profile.
 The lighthouse report is created in `target/cypress/lhreport.html`
 
-[JHipster Homepage and latest documentation]: https://www.jhipster.tech
-[JHipster 8.5.0 archive]: https://www.jhipster.tech/documentation-archive/v8.5.0
-[Using JHipster in development]: https://www.jhipster.tech/documentation-archive/v8.5.0/development/
-[Using Docker and Docker-Compose]: https://www.jhipster.tech/documentation-archive/v8.5.0/docker-compose
-[Using JHipster in production]: https://www.jhipster.tech/documentation-archive/v8.5.0/production/
-[Running tests page]: https://www.jhipster.tech/documentation-archive/v8.5.0/running-tests/
-[Code quality page]: https://www.jhipster.tech/documentation-archive/v8.5.0/code-quality/
-[Setting up Continuous Integration]: https://www.jhipster.tech/documentation-archive/v8.5.0/setting-up-ci/
 [Node.js]: https://nodejs.org/
 [NPM]: https://www.npmjs.com/
 [Webpack]: https://webpack.github.io/
