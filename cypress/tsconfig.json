@@ -3,9 +3,9 @@
   "compilerOptions": {
     "baseUrl": "./",
     "sourceMap": false,
-    "outDir": "../../../../target/cypress/tsc",
+    "outDir": "../target/cypress/tsc",
     "target": "es2018",
     "types": ["cypress", "node"]
   },
-  "include": ["./../../../../cypress*.config.ts", "./**/*.ts"]
+  "include": ["./../cypress*.config.ts", "./**/*.ts"]
 }
