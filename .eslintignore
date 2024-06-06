@@ -6,4 +6,4 @@ build/
 node/
 coverage/
 postcss.config.js
-target/classes/static/
+dist/
